@@ -1,0 +1,4 @@
+-r ../desktop/requirements.txt
+numpy==2.3.5
+scipy==1.17.0
+pytest==8.3.5

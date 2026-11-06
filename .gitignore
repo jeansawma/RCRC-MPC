@@ -1,0 +1,8 @@
+build/
+.tools/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.csv
+.settings/language.settings.xml

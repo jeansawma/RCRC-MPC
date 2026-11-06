@@ -1,0 +1,13 @@
+RCRC-H723 software-verified candidate, 2026-11-06
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119
+CPU200MHz; PWM20kHz; default Ts5000us; CSMPC horizon8
+Flash base0x08000000; BOOT0 ROM USB DFU programming
+   text	   data	    bss	    dec	    hex	filename
+  78712	    720	  61600	 141032	  226e8	/workspace/RCRC-MPC/release/rcrc_h723.elf
+HEX verified: 4968 data records, 79432 bytes, MSP=0x20020000, Reset=0x0800D0D9
+SHA256 ee0c1891e0b5cdeda692f77fe1a88428fac6aabd28d42c310a2286e91e72f441
+
+19,944 C control checks; app integration and ASan/UBSan passed.
+15 Python tests passed; 60 independent SciPy QP comparisons.
+Actual GUI tested. Physical hardware and CubeIDE GUI not tested.
+See docs/validation.md and README.md before use.

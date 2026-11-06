@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+ <storageModule moduleId="org.eclipse.cdt.core.settings">
+  <cconfiguration id="rcrc.external.release">
+   <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="rcrc.external.release" moduleId="org.eclipse.cdt.core.settings" name="Release"><externalSettings/><extensions><extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/><extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/></extensions></storageModule>
+   <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+    <configuration artifactName="rcrc_h723" buildProperties="" description="External Makefile; Arm GNU GCC on PATH" id="rcrc.external.release" name="Release" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+     <folderInfo id="rcrc.external.release.root" name="/" resourcePath=""><toolChain id="rcrc.external.tc" name="Arm GNU GCC" superClass="org.eclipse.cdt.build.core.prefbase.toolchain"><targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="rcrc.external.platform" name="STM32H723"/><builder buildPath="${workspace_loc:/RCRC_H723}" command="make" id="rcrc.external.builder" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="GNU Make" autoBuildTarget="all" incrementalBuildTarget="all" cleanBuildTarget="clean" superClass="org.eclipse.cdt.build.core.settings.default.builder"/></toolChain></folderInfo>
+    </configuration>
+   </storageModule>
+  </cconfiguration>
+ </storageModule>
+ <storageModule moduleId="cdtBuildSystem" version="4.0.0"><project id="RCRC_H723.null" name="RCRC_H723"/></storageModule>
+</cproject>
