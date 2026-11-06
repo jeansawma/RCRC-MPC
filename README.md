@@ -37,9 +37,9 @@ The firmware uses PA13 as enableB according to the schematic; no SWD debugger is
 ## Run the laptop application
 
 **Windows:** install Python 3.10+ with Tcl/Tk support, extract or clone the whole
-project, then double-click **`run_desktop.bat`** in the project root. It creates a
+project, then double-click **`desktop/run_desktop.bat`** inside the desktop folder. It creates a
 local `.venv`, installs the dependencies on first use, and starts the app. Keep
-the launcher beside the `desktop` folder. See the [desktop guide](desktop/README.md)
+the launcher inside the `desktop` folder. See the [desktop guide](desktop/README.md)
 for troubleshooting and command-line options.
 
 Install Python 3.10+ with Tk, then run from this project directory:

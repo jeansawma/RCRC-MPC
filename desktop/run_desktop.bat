@@ -2,9 +2,12 @@
 setlocal EnableExtensions DisableDelayedExpansion
 title RCRC Control Laboratory
 
-rem Start from this script's folder, even when double-clicked or on a UNC share.
-pushd "%~dp0"
+rem This launcher lives in desktop; run the module from the project folder above it.
+rem pushd also handles double-click launches, spaces, and UNC shares.
+pushd "%~dp0.."
 if errorlevel 1 goto location_failed
+if not exist "desktop\app.py" goto project_missing
+if not exist "desktop\requirements.txt" goto project_missing
 
 set "RCRC_PY=.venv\Scripts\python.exe"
 if exist "%RCRC_PY%" goto check_environment
@@ -52,6 +55,11 @@ echo ERROR: The existing .venv does not contain a working Windows Python 3.10 or
 echo Rename the .venv folder to preserve it, then run this launcher again.
 goto failed
 
+:project_missing
+echo ERROR: Desktop app files were not found in this project.
+echo Keep run_desktop.bat inside the project's desktop folder alongside app.py.
+goto failed
+
 :missing_tk
 echo ERROR: Tkinter is missing from this Python installation.
 echo Modify your Python installation and enable Tcl/Tk and IDLE, then try again.
@@ -70,6 +78,6 @@ popd
 endlocal & exit /b 1
 
 :location_failed
-echo ERROR: Cannot open the folder containing run_desktop.bat.
+echo ERROR: Cannot open the project folder above the desktop folder.
 pause
 endlocal & exit /b 1
