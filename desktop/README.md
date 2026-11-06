@@ -1,4 +1,13 @@
-Run from the repository root with Python 3.10 or newer:
+On Windows, extract or clone the **whole project**, install Python 3.10 or newer
+with Tcl/Tk support, and double-click **`run_desktop.bat`** in the project root.
+The launcher finds `py` or `python`, creates a local `.venv`, installs the pinned
+desktop dependencies, and opens the app. Internet access is needed for the first
+installation. No administrator rights or manual environment activation is needed.
+Keep the batch file alongside `desktop/`; it cannot run by itself. If setup or
+startup fails, the console stays open so you can read the error. The launcher can
+also be called from a command prompt and forwards arguments to `desktop.app`.
+
+Alternatively, run from the repository root with Python 3.10 or newer:
 
 ```sh
 python -m pip install -r desktop/requirements.txt
